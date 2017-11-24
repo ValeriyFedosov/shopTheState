@@ -20,6 +20,7 @@ public class Product {
 	public Product() {
 	}
 
+
 	public Product(Long id, String title, String description) {
 		this(id, title, description, null, null, 0L, 0);
 	}
@@ -88,5 +89,14 @@ public class Product {
 
 	public void setBalance(int balance) {
 		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "Product{" +
+				"id=" + id +
+				", title='" + title + '\'' +
+				", description='" + description + '\'' +
+				'}';
 	}
 }
